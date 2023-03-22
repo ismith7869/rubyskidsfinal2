@@ -1,0 +1,109 @@
+body, html{
+	height:100%;
+	margin:0;
+	font-size: 16px;
+	font-family:"Lato", sans-serif;
+	font-weight:400;
+	line-height:1.8em;
+	color:#666;
+}
+
+.pimg1, .pimg2, .pimg3{
+	position:relative;
+	opacity:0.90;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+	/*
+	  fixed = parallax
+	  scroll = normal
+	*/
+	background-attachment: fixed;
+}
+
+.pimg1{
+    background-image: url(../Ruby%27s%20Kids/original/copies/ruby%27s_kids_logo_black.png);
+    min-height: 100%;
+    background-size: cover;
+}
+
+.pimg2{
+    background-image: url(../Ruby%27s%20Kids/original/copies/hand_graphic.png);
+    min-height: 400px;
+    background-size: cover;
+}
+
+.pimg3{
+    background-image: url(../Ruby%27s%20Kids/original/copies/grandma_ruby.jpg);
+    min-height: 400px;
+}
+
+.section{
+	text-align:center;
+	padding:50px 80px;
+}
+
+.section-light{
+	background-color: #ffffff;
+	color: #74080A;
+}
+
+.section-dark{
+	background-color: #74080A;
+	color: #ffffff;
+}
+
+.ptext{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000000;
+    font-size: 33px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.ptext .border{
+	background-color: #ffffff;
+	color: #74080A;
+	padding: 20px;
+}
+
+.ptext .border.trans{
+	background-color: whitesmoke;
+	color:#000000;
+	opacity: 0.90;
+	text-transform: capitalize;
+}
+
+@media(max-width: 568px){
+	.ptext{
+    letter-spacing: 3px;
+    word-spacing: 4px;
+    white-space: nowrap;
+    font-size: 27px;
+	}
+	.pimg1, .pimg2, .pimg3{
+		background-attachment:scroll;
+	}
+}
+
+a{ 
+	text-decoration:none;
+	color: #74080A;
+}
+
+li{
+    background-color: #ffffff;
+    color: #74080A;
+    background-size: inherit;
+    list-style-type: none;
+    text-transform: capitalize;
+}
+
+a:hover{
+	background-color: #74080A;
+	color: white;
+}
